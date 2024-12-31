@@ -1,0 +1,17 @@
+body{
+    font-family: "Nunito", 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header{
+    padding: 25px;
+    background-color: rgb(186, 186, 186);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    font-size: 20px;
+}
