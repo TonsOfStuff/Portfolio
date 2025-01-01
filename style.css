@@ -13,13 +13,18 @@ header{
 }
 
 
+
 /*Header*/
 #logo{
     font-size: 20px;
+    filter: blur(0);
+    transition: filter 1s;
 }
 
-
-
+#logo.open{
+    filter: blur(2px);
+    transition: filter 1s;
+}
 
 #masterContent.unopen{
     width: 30px;
@@ -50,7 +55,7 @@ header{
 
     transform: rotate(0turn);
 
-    transition: all 1s;
+    transition: transform 1s;
 }
 
 #menuButton.open{
@@ -59,8 +64,10 @@ header{
 
     transform: rotate(0.25turn);
 
-    transition: all 1s;
+    transition: transform 1s;
 }
+
+/*Sidebar*/
 
 #sidebar.unopen{
     height: 100%;
@@ -72,6 +79,7 @@ header{
     transform: translateY(-80px);
 
     transition: all 1s;
+    z-index: 1;
 }
 
 #sidebar.open{
@@ -81,4 +89,21 @@ header{
     transform: translateY(-80px);
     transition: all 1s;
     position: absolute;
+    z-index: 1;
+}
+
+
+
+/*Main body*/
+#main{
+    margin: 10px;
+    filter: blur(0);
+
+    transition: filter 1s;
+}
+
+#main.open{
+    filter: blur(2px);
+
+    transition: filter 1s;
 }
