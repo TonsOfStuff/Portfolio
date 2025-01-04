@@ -75,7 +75,7 @@ header{
 
     background-color: rgb(121, 121, 121);
 
-    position: absolute;
+    position: fixed;
     transform: translateY(-80px);
 
     transition: all 1s;
@@ -88,7 +88,7 @@ header{
     width: 250px;
     transform: translateY(-80px);
     transition: all 1s;
-    position: absolute;
+    position: fixed;
     z-index: 1;
 }
 
