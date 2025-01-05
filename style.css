@@ -99,12 +99,24 @@ header{
     filter: blur(0);
 
     transition: filter 1s;
+    display: flex;
+    flex-direction: column;
 }
 
 #main.open{
     filter: blur(2px);
 
     transition: filter 1s;
+}
+
+#mainContent{
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainContent div{
+    display: inline-block;
 }
 
 #imageContainer{
